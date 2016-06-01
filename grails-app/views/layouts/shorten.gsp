@@ -15,10 +15,13 @@
     <link rel="stylesheet" href="${resource(dir: 'css/font', file: 'font-awesome.css')}" type="font/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <meta name="google-signin-client_id" content="306825591740-ibgjqls01tg2ii2k73c8u5dfs6qq3gtr.apps.googleusercontent.com">
+
+
     <asset:javascript src="jquery.js"/>
     <asset:javascript src="bootstrap.js"/>
     <asset:javascript src="bootbox.min.js"/>
-
+    <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
     <g:layoutHead/>
 </head>
 
@@ -44,9 +47,6 @@
                     <a href="#about">Google Drive</a>
                 </li>
                 <li>
-                    <a href="#services">Services</a>
-                </li>
-                <li>
                     <a href="#" onclick="signOut();">Cerrar Sesión</a>
                 </li>
             </ul>
@@ -62,7 +62,7 @@
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
             console.log('User signed out.');
-            window.location.href = "index.html";
+            window.location.href = "${createLink(controller: 'shortMe', action: 'index')}";
         });
     }
 
@@ -74,5 +74,32 @@
 
 </script>
 <g:layoutBody/>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

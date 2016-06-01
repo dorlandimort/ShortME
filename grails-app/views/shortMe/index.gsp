@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title></title>
+    <title>ShortME! | URL shortener</title>
     <meta name="layout" content="landing">
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="306825591740-ibgjqls01tg2ii2k73c8u5dfs6qq3gtr.apps.googleusercontent.com">
