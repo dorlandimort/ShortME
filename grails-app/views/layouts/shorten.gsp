@@ -38,14 +38,11 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand topnav" href="${createLink(controller: 'shortMe',
-                    action: 'shortener')}">ShortME! <small>Powered by bitly</small></a>
+                    action: 'shortener')}">ShortME! <small>Powered by bit.ly</small></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#about">Google Drive</a>
-                </li>
                 <li>
                     <a href="#" onclick="signOut();">Cerrar Sesión</a>
                 </li>
@@ -80,26 +77,45 @@
             <div class="col-lg-12">
                 <ul class="list-inline">
                     <li>
-                        <a href="#">Home</a>
+                        Compartir en Facebook o Twitter
+                        <div id="fb-root"></div>
+                        <div class="fb-share-button" data-href="http://www.ulsaoaxaca.edu.mx" data-layout="button_count" data-mobile-iframe="false"></div>
+                        <a href="https://twitter.com/share" class="twitter-share-button"
+                           data-text="Ordinario de Programación Web! #ulsaoaxaca"
+                            data-url="http://www.ulsaoaxaca.edu.mx"
+                           >Tweetear</a>
                     </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+
+
+
+
                 </ul>
-                <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                <p class="copyright text-muted small">Copyright &copy; Dimort Inc. 2016. All Rights Reserved</p>
             </div>
         </div>
     </div>
 </footer>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
+
+    !function(d,s,id) {
+        var js,
+                fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location)?'http':'https';
+        if(! d.getElementById(id)) {
+            js=d.createElement(s);js.id=id;
+            js.src= p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js,fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
+</script>
 </body>
 </html>

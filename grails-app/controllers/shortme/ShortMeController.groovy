@@ -7,6 +7,11 @@ class ShortMeController {
     }
 
     def shortener() {
+        println params
+    }
 
+    def _twtButton() {
+        println params
+        [url: params.url]
     }
 }

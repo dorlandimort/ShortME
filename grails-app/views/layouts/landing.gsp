@@ -28,14 +28,17 @@
             <div class="col-lg-12">
                 <ul class="list-inline">
                     <li>
-                        Compartir en Facebook
+                        Compartir en Facebook o Twitter
                         <div id="fb-root"></div>
                         <div class="fb-share-button" data-href="http://www.ulsaoaxaca.edu.mx" data-layout="button_count" data-mobile-iframe="false"></div>
+                        <a href="https://twitter.com/share" class="twitter-share-button"
+                           data-text="Ordinario de Programación Web! #ulsaoaxaca"
+                           data-url="http://www.ulsaoaxaca.edu.mx"
+                        >Tweetear</a>
                     </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="https://twitter.com/intent/tweet?text=Ordinario%20de%20Programación%20Web!&hashtags=ulsaoaxaca&via=dorlandimort" class="twitter-share-button">Tweet</a>
-                    </li>
+
+
+
 
                 </ul>
                 <p class="copyright text-muted small">Copyright &copy; Dimort Inc. 2016. All Rights Reserved</p>
