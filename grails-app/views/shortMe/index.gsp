@@ -8,8 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>ShortME! | URL shortener</title>
     <meta name="layout" content="landing">
+    <title>ShortME! | URL shortener</title>
+
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="306825591740-ibgjqls01tg2ii2k73c8u5dfs6qq3gtr.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -25,7 +26,7 @@
             <div class="col-lg-12">
                 <div class="intro-message">
                     <h1>ShortME!</h1>
-                    <h3>Acorta URLs y mira tus archivos de Drive!</h3>
+                    <h3>Acorta URLs y comparte en redes sociales!</h3>
                     <hr class="intro-divider">
                     <p>Inicia Sesión con Google</p>
                     <ul class="list-inline intro-social-buttons">
